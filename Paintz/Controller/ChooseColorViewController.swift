@@ -11,13 +11,14 @@ import UIKit
 class ChooseColorViewController: UIViewController {
 
     //outlets
-    
     @IBOutlet weak var alphaSlider: UISlider!
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     @IBOutlet weak var colorSelectedView: UIView!
     
+    //variables
+    var color: UIColor?
     
     override func viewDidLoad() {
         super.viewDidLoad()

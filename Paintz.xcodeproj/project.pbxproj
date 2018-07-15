@@ -16,6 +16,8 @@
 		6CF5AC3920FAB24D0096FE8C /* ChooseColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3820FAB24D0096FE8C /* ChooseColorViewController.swift */; };
 		6CF5AC3B20FAB83D0096FE8C /* ChooseStrokeWIdthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3A20FAB83D0096FE8C /* ChooseStrokeWIdthViewController.swift */; };
 		6CF5AC3D20FAB9D10096FE8C /* SampleOfLineWidthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3C20FAB9D10096FE8C /* SampleOfLineWidthView.swift */; };
+		6CF5AC3F20FABF3A0096FE8C /* SquiggleSquiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3E20FABF3A0096FE8C /* SquiggleSquiggle.swift */; };
+		6CF5AC4120FAC1140096FE8C /* PaintProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC4020FAC1140096FE8C /* PaintProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6CF5AC3820FAB24D0096FE8C /* ChooseColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorViewController.swift; sourceTree = "<group>"; };
 		6CF5AC3A20FAB83D0096FE8C /* ChooseStrokeWIdthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseStrokeWIdthViewController.swift; sourceTree = "<group>"; };
 		6CF5AC3C20FAB9D10096FE8C /* SampleOfLineWidthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleOfLineWidthView.swift; sourceTree = "<group>"; };
+		6CF5AC3E20FABF3A0096FE8C /* SquiggleSquiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquiggleSquiggle.swift; sourceTree = "<group>"; };
+		6CF5AC4020FAC1140096FE8C /* PaintProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			children = (
 				6CF5AC3320FAB0110096FE8C /* PaintView.swift */,
 				6CF5AC3C20FAB9D10096FE8C /* SampleOfLineWidthView.swift */,
+				6CF5AC3E20FABF3A0096FE8C /* SquiggleSquiggle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 		6CF5AC3720FAB04C0096FE8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6CF5AC4020FAC1140096FE8C /* PaintProtocols.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF5AC4120FAC1140096FE8C /* PaintProtocols.swift in Sources */,
 				6CF5AC2420FAABDD0096FE8C /* MainViewController.swift in Sources */,
+				6CF5AC3F20FABF3A0096FE8C /* SquiggleSquiggle.swift in Sources */,
 				6CF5AC3920FAB24D0096FE8C /* ChooseColorViewController.swift in Sources */,
 				6CF5AC2220FAABDD0096FE8C /* AppDelegate.swift in Sources */,
 				6CF5AC3420FAB0110096FE8C /* PaintView.swift in Sources */,

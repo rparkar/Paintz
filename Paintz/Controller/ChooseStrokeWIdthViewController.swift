@@ -11,9 +11,12 @@ import UIKit
 class ChooseStrokeWIdthViewController: UIViewController {
 
     //outlets
-    
     @IBOutlet weak var strokeLineWidthSlider: UISlider!
     @IBOutlet weak var sampleLineWidthView: SampleOfLineWidthView!
+    
+    //variables
+    var strokeWidth: CGFloat  = 10.0
+    var delegate: ChooseStrokeWIdthViewControllerDelegate? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
