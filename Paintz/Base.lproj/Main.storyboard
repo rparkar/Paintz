@@ -24,26 +24,26 @@
                                     <constraint firstAttribute="height" constant="45" id="RNH-tI-jEB"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Color" id="3ku-tY-NnY">
+                                    <barButtonItem title="Color" image="g20" id="3ku-tY-NnY">
                                         <connections>
                                             <segue destination="JP4-En-pQ2" kind="popoverPresentation" identifier="chooseColorVC" popoverAnchorBarButtonItem="3ku-tY-NnY" id="suM-Gl-Ycs">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Stroke" id="Rv2-1n-wFi">
+                                    <barButtonItem title="Stroke" image="path4" id="Rv2-1n-wFi">
                                         <connections>
                                             <segue destination="1fj-N8-ZcG" kind="popoverPresentation" identifier="chooseStrokeWidthVC" popoverAnchorBarButtonItem="Rv2-1n-wFi" id="Sca-9y-HAk">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="undo" id="2fe-Xr-AII">
+                                    <barButtonItem image="noun_Undo_39913" id="2fe-Xr-AII">
                                         <connections>
                                             <action selector="undoButtonPressed:" destination="BYZ-38-t0r" id="ISm-p9-yAV"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Clear" id="Rqm-PR-i0W">
+                                    <barButtonItem systemItem="trash" id="Rqm-PR-i0W">
                                         <connections>
                                             <action selector="clearButtonPressed:" destination="BYZ-38-t0r" id="SdH-ik-LNd"/>
                                         </connections>
@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236" y="-107"/>
+            <point key="canvasLocation" x="236" y="-107.49625187406298"/>
         </scene>
         <!--Choose Color View Controller-->
         <scene sceneID="MqR-uX-1e0">
@@ -288,4 +288,9 @@
             <point key="canvasLocation" x="320.80000000000001" y="775.86206896551732"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="g20" width="30" height="30"/>
+        <image name="noun_Undo_39913" width="30" height="30"/>
+        <image name="path4" width="30" height="30"/>
+    </resources>
 </document>

@@ -18,6 +18,7 @@
 		6CF5AC3D20FAB9D10096FE8C /* SampleOfLineWidthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3C20FAB9D10096FE8C /* SampleOfLineWidthView.swift */; };
 		6CF5AC3F20FABF3A0096FE8C /* SquiggleSquiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC3E20FABF3A0096FE8C /* SquiggleSquiggle.swift */; };
 		6CF5AC4120FAC1140096FE8C /* PaintProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF5AC4020FAC1140096FE8C /* PaintProtocols.swift */; };
+		6CF5AC4320FAF0A40096FE8C /* AttributionTexts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CF5AC4220FAF0A40096FE8C /* AttributionTexts.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6CF5AC3C20FAB9D10096FE8C /* SampleOfLineWidthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleOfLineWidthView.swift; sourceTree = "<group>"; };
 		6CF5AC3E20FABF3A0096FE8C /* SquiggleSquiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquiggleSquiggle.swift; sourceTree = "<group>"; };
 		6CF5AC4020FAC1140096FE8C /* PaintProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintProtocols.swift; sourceTree = "<group>"; };
+		6CF5AC4220FAF0A40096FE8C /* AttributionTexts.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = AttributionTexts.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				6CF5AC2820FAABDE0096FE8C /* Assets.xcassets */,
 				6CF5AC2A20FAABDE0096FE8C /* LaunchScreen.storyboard */,
 				6CF5AC2D20FAABDF0096FE8C /* Info.plist */,
+				6CF5AC4220FAF0A40096FE8C /* AttributionTexts.strings */,
 			);
 			path = Paintz;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CF5AC2C20FAABDE0096FE8C /* LaunchScreen.storyboard in Resources */,
+				6CF5AC4320FAF0A40096FE8C /* AttributionTexts.strings in Resources */,
 				6CF5AC2920FAABDE0096FE8C /* Assets.xcassets in Resources */,
 				6CF5AC2720FAABDD0096FE8C /* Main.storyboard in Resources */,
 			);
