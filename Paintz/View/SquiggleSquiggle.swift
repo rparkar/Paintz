@@ -9,5 +9,28 @@
 import UIKit
 
 class SquiggleSquiggle: UIBezierPath {
+    
+    var color: UIColor
+    
+
+    init(color: UIColor, strokeLineWidth: CGFloat) {
+        
+        self.color = color
+        super.init()
+        self.lineWidth = strokeLineWidth
+        self.lineCapStyle = .round
+        self.lineCapStyle = .round
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init coder hasnt been implemented")
+    }
+    
+    override func stroke() {
+        color.setStroke()
+        super.stroke()
+
+    }
 
 }

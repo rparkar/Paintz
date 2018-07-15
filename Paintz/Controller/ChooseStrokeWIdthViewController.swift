@@ -15,20 +15,29 @@ class ChooseStrokeWIdthViewController: UIViewController {
     @IBOutlet weak var sampleLineWidthView: SampleOfLineWidthView!
     
     //variables
-    var strokeWidth: CGFloat  = 10.0
+    var strokeWidth: CGFloat  = 2.5
     var delegate: ChooseStrokeWIdthViewControllerDelegate? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        strokeLineWidthSlider.value = Float(strokeWidth)
+        sampleLineWidthView.sampleLine.lineWidth = strokeWidth
+        sampleLineWidthView.setNeedsDisplay()
     }
     
-    @IBAction func strokelineWidthChanged(_ sender: Any) {
+    @IBAction func strokelineWidthChanged(_ sender: UISlider) {
+        strokeWidth = CGFloat(sender.value)
+        print(sender.value)
+        sampleLineWidthView.sampleLine.lineWidth = strokeWidth
+        sampleLineWidthView.setNeedsDisplay()
+        
     }
     
     @IBAction func doneButtonPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true) {
+            self.delegate?.strokeLineWidthChanged(width: self.strokeWidth)
+        }
     }
     
 }

@@ -246,7 +246,7 @@
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRh-8k-Szj" customClass="SampleOfLineWidthView" customModule="Paintz" customModuleProvider="target">
                                 <rect key="frame" x="50" y="415.5" width="275" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="E4e-kJ-Lm1"/>
                                 </constraints>

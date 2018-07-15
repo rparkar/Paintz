@@ -33,6 +33,7 @@ class MainViewController: UIViewController, ChooseColorViewControllerDelegate, C
         if segue.identifier == "chooseColorVC"  {
             let destination = segue.destination as! ChooseColorViewController
             destination.color = paintView.drawingColor
+            destination.delegate = self
             
         } else if segue.identifier == "chooseStrokeWidthVC" {
             let destination = segue.destination as! ChooseStrokeWIdthViewController
@@ -69,6 +70,9 @@ class MainViewController: UIViewController, ChooseColorViewControllerDelegate, C
     }
     
     @IBAction func actionButtonPressed(_ sender: Any) {
+        let itemsToShare = ["Hey check out what I just painted on my own", paintView.image] as [Any]
+        let activityVC = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+        present(activityVC, animated: true, completion: nil)
     }
     
     
