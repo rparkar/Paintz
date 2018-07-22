@@ -24,6 +24,8 @@ class ChooseColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.preferredContentSize = CGSize(width: 300, height: 400)
+        
         var alpha : CGFloat = 0.0
         var red : CGFloat = 0.0
         var green: CGFloat = 0.0

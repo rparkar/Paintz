@@ -8,15 +8,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController, ChooseColorViewControllerDelegate, ChooseStrokeWIdthViewControllerDelegate {
+class MainViewController: UIViewController, ChooseColorViewControllerDelegate, ChooseStrokeWIdthViewControllerDelegate, UIPopoverPresentationControllerDelegate {
 
     //outlets
     @IBOutlet weak var paintView: PaintView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     func colorChanged(color: UIColor) {
@@ -32,6 +30,10 @@ class MainViewController: UIViewController, ChooseColorViewControllerDelegate, C
         
         if segue.identifier == "chooseColorVC"  {
             let destination = segue.destination as! ChooseColorViewController
+            
+            segue.destination.modalPresentationStyle = .popover
+            segue.destination.popoverPresentationController?.delegate = self as? UIPopoverPresentationControllerDelegate
+            segue.destination.preferredContentSize = CGSize(width: 300, height: 400)
             destination.color = paintView.drawingColor
             destination.delegate = self
             
